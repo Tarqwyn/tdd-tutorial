@@ -10,13 +10,14 @@ A number of dependencies should install on your machine when this is complete ru
 
 It the installation has been sucessful then you should see the following output.
 
-```Running "jshint:all" (jshint) task
->> 3 files lint free.
+`Running "jshint:all" (jshint) task
+ 3 files lint free.
 
 Running "jasmine:default" (jasmine) task
 Testing jasmine specs via phantom
 .
 1 spec in 0s.
->> 0 failures
+ 0 failures
 
-Done, without errors.```
+Done, without errors.`
+
