@@ -23,3 +23,15 @@ Testing jasmine specs via phantom
 Done, without errors.
 ```
 
+
+In the same directory check you have 'ruby' installed
+
+`ruby -v` should tell you the version
+
+if not install it..
+
+https://www.ruby-lang.org/en/documentation/installation/
+
+then install cucumber
+
+`gem install cucumber`
