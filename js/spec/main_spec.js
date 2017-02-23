@@ -1,7 +1,10 @@
-define(['main'], function (Tdd) {
-    describe('A test', function () {
-        it('should run', function () {   
-            return true;
+define(['main'], function (App) {
+
+    var visit = new App();
+
+    describe('Should initialise', function () {
+        it('should start a new session', function () {
+            expect(typeof visit.session === 'undefined').toBeFalsy();
         });
     });
 });
