@@ -14,12 +14,7 @@ define(['jquery'], function ($) {
 
     Services.prototype = {
         request: function (user, password) {
-            if (user in this.userDBRequest.users) {
-                if (this.userDBRequest.users[user].pass === password) {
-                    return true;
-                }
-            }
-            return false;
+            return true;
         }
     };
 

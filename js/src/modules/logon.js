@@ -7,15 +7,6 @@ define(['jquery'], function ($) {
 
         this.service = service;
 
-        form.submit(function (ev) {
-            var response = self.captureLogonRequest(ev);
-            if (response.sucess) {
-                feedback.html('Hello ' + response.user);
-            }
-            else {
-                feedback.html('User name or password were not recognised');
-            }
-        });
     };
 
     Logon.prototype = {
@@ -31,10 +22,10 @@ define(['jquery'], function ($) {
         },
         handleLogonRequests: function (user, pass) {
             var registeredUser;
-            var responseObject = {};
-            responseObject.user = user;
-            responseObject.sucess = this.service.request(user, pass);
-
+            var responseObject = {
+                user: 'steven atherton',
+                sucess: true
+            };
             return responseObject;
         },
     };

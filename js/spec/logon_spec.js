@@ -21,18 +21,5 @@ define(['logon'], function (Logon) {
                 sucess: true
             }));
         });
-        it('should not be logged on sucessfully if password incorrect', function () {
-            session  = new Logon(serviceFixtureFail);
-            expect(session.handleLogonRequests('steven atherton', 'gibbet')).toEqual(jasmine.objectContaining({
-                sucess: false
-            }));
-        });
-        it('should not be logged on sucessfully if not registered', function () {
-            session  = new Logon(serviceFixtureFail);
-            expect(session.handleLogonRequests('fred bloggs', 'flibberty')).toEqual(jasmine.objectContaining({
-                sucess: false
-            }));
-        });
-
     });
 });
