@@ -18,7 +18,7 @@ module.exports = function (grunt) {
                 eqnull: true,
                 white: true
             },
-            all: ['Gruntfile.js', 'js/*.js', 'js/spec/*.js'],
+            all: ['Gruntfile.js', 'js/*.js', 'js/src/**/*.js', 'js/spec/*.js'],
         },
         jasmine: {
             default: {
@@ -32,7 +32,9 @@ module.exports = function (grunt) {
                     templateOptions: {
                         requireConfig: {
                             paths: {
-                                'jquery' : './js_test_helpers/jquery-1.7.2',
+                                'jquery' : './js/vendor/jquery-3.1.1.min',
+                                'logon'  : './js/src/modules/logon',
+                                'service'  : './js/src/modules/service', 
                                 'main'   : './js/main'
                             }
                         }

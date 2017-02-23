@@ -1,13 +1,12 @@
-define(['jquery'], function ($) {
-
-	
-    var TDD = function () {
-        
+define(['jquery', 'logon', 'service'], function ($, Logon, Service) {
+    
+    var App = function () {
+        this.session = new Logon(new Service());
     };
 
-    TDD.prototype = {
+    App.prototype = {
 
     };
 
-    return TDD;
+    return App;
 });
