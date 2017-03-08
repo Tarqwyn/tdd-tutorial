@@ -6,6 +6,8 @@ Install node.js following the instructions here https://nodejs.org/en/download/
 
 Open a terminal session and navigate to the `tdd-tutorial` directory and run `npm install`
 
+You may need to install the grunt cli tool `npm install -g grunt-cli`
+
 A number of dependencies should install on your machine when this is complete run `grunt`.
 
 It the installation has been sucessful then you should see the following output.
@@ -35,3 +37,4 @@ https://www.ruby-lang.org/en/documentation/installation/
 then install cucumber
 
 `gem install cucumber`
+
